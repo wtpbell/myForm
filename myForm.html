@@ -6,11 +6,49 @@
     <title>HTML</title>
 </head>
 <body>
-    <p>This is <em>emphasize</em> </p>
-    <p>This is <i>itlaic</i> </p>
-    <p>This is <b>bold</b> </p>
-    <p>This is <s>cross</s> </p>
-    <p>2 <sub>3</sub></p>
-    <p>this  hello</p>
+    <h1>Application Form</h1>
+    <form>
+        <label for="fName" >First Name:</label>
+        <input type="text" id="fName" name="fName" required>
+        <br>
+
+        <label for="lName" >Last Name:</label>
+        <input type="text" id="lName" name="lName" required>
+        <br>
+
+        <label for="age" >Age:</label>
+        <input type="number" id="age" name="age" min="1" max="80" required>
+        <br>
+        <label for="gender" >Gender: </label>
+        <select name="gender" id="gender" >
+        <option value="female" required>Female</option>
+        <option value="male" required>Male</option>
+        </select>
+        <br>
+        <label for="level" required>Level:</label>
+        <input type="radio" id="beginner" name="beginner" value="beginner" >
+        <label for="beginner">Beginner</label>
+        <input type="radio" id="intermediate" name="intermediate" value="intermediate">
+        <label for="intermediate">Intermediate</label>
+        <input type="radio" id="Advanced" name="Advanced" value="Advanced">
+        <label for="Advanced">Advanced</label>
+        <br>
+        <label for="skills" required>Skills: </label>
+        <input type="checkbox" id="html" name="html" value="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="css" value="css">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="others" name="others" value="others">
+        <label for="others">
+            Others
+            <textarea name="remark" id="remark" cols="20" rows="0"></textarea>
+        </label>
+        <br>
+        <label for="remark">Remark:</label>
+        <textarea name="remark" id="remark" cols="30" rows="10" required></textarea>
+        <br>
+
+        <button type="submit">Submit</button> <button disabled>cancel</button> 
+    </form>
 </body>
 </html>
